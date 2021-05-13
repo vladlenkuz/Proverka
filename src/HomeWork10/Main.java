@@ -15,11 +15,11 @@ public class Main {
                 int result = method(array1);
                 System.out.println(result);
             } catch (MyArraySizeException e) {
-                System.out.println("Размер массива превышен!");
+                System.out.println("Размер массива превышен ");
             }
         }
         catch (MyArrayDataException e) {
-            System.out.println("Неправильное значение массива!");
+            System.out.println("Неправильное значение массива ");
             System.out.println("Ошибка в ячейке: " + e.i + "x" + e.j);
         }
 
@@ -45,6 +45,7 @@ public class Main {
             }
 
         }
+        System.out.print("Сумма всех элементов: ");
         return count;
     }
 
